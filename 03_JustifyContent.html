@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .flex-container{
+            display: flex;
+            background-color: rgb(0, 152, 190);
+            border-radius: 2rem;
+
+        }
+        .flex-items{
+            background-color: bisque;
+            color: rgb(255, 17, 0);
+            padding: 1rem;
+            margin: 30px;
+            border-radius: 0.3rem;
+            font-size: larger;
+        }
+        .flex-items:hover{
+            color: rgb(255, 255, 255);
+            background-color: black;
+        }
+        .flex-start{
+            justify-content: flex-start;
+        }
+        .flex-end{
+            justify-content: flex-end;
+        }
+        .space-between{
+            justify-content: space-between;
+        }
+        .space-around{
+            justify-content: space-around;
+        }
+        .center{
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <center><h3>Flex Start</h3></center>
+    <div class="flex-container row flex-start">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+
+    <center><h3>Flex End</h3></center>
+    <div class="flex-container flex-end">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+    <center><h3>Space Between</h3></center>
+    <div class="flex-container space-between">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+
+    <center><h3>Space Around</h3></center>
+    <div class="flex-container space-around">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+    <center><h3>Center</h3></center>
+    <div class="flex-container center">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+</body>
+</html>

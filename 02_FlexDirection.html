@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .flex-container{
+            display: flex;
+            background-color: rgb(0, 152, 190);
+            border-radius: 2rem;
+
+        }
+        .flex-items{
+            background-color: bisque;
+            color: rgb(255, 17, 0);
+            padding: 1rem;
+            margin: 30px;
+            border-radius: 0.3rem;
+            font-size: larger;
+        }
+        .flex-items:hover{
+            background-color: rgb(103, 237, 255);
+            color: indigo;
+        }
+        
+        .row{
+            flex-direction: row;
+        }
+        .row-reverse{
+            flex-direction: row-reverse;
+        }
+        .column{
+            flex-direction:column;
+        }
+        .column-reverse{
+            flex-direction: column-reverse;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>FlexDirection Row</h1></center>
+    <div class="flex-container row">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+
+    <center><h1>FlexDirection Row-reverse</h1></center>
+    <div class="flex-container row-reverse">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+    <center><h1>FlexDirection Column</h1></center>
+    <div class="flex-container column">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+
+    <center><h1>FlexDirection Column-reverse</h1></center>
+    <div class="flex-container column-reverse">
+        <div class="flex-items">1</div>
+        <div class="flex-items">2</div>
+        <div class="flex-items">3</div>
+    </div>
+</body>
+</html>
